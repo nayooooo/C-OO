@@ -1,0 +1,2 @@
+C:\Users\YEWAN\mingw64\bin\ar.exe qc libObject.a CMakeFiles/Object.dir/object.c.obj
+C:\Users\YEWAN\mingw64\bin\ranlib.exe libObject.a

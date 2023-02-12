@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.lua": "lua",
+        "stdio.h": "c",
+        "windows.h": "c"
+    }
+}

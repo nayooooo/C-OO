@@ -1,0 +1,8 @@
+D:/code/C/pointer/OO/packageSimplified/build/CMakeFiles/packageSimplified.dir
+D:/code/C/pointer/OO/packageSimplified/build/CMakeFiles/edit_cache.dir
+D:/code/C/pointer/OO/packageSimplified/build/CMakeFiles/rebuild_cache.dir
+D:/code/C/pointer/OO/packageSimplified/build/components/CMakeFiles/edit_cache.dir
+D:/code/C/pointer/OO/packageSimplified/build/components/CMakeFiles/rebuild_cache.dir
+D:/code/C/pointer/OO/packageSimplified/build/components/Object/CMakeFiles/Object.dir
+D:/code/C/pointer/OO/packageSimplified/build/components/Object/CMakeFiles/edit_cache.dir
+D:/code/C/pointer/OO/packageSimplified/build/components/Object/CMakeFiles/rebuild_cache.dir

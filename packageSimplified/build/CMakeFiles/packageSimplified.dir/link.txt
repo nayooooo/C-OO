@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\packageSimplified.dir/objects.a
+C:\Users\YEWAN\mingw64\bin\ar.exe qc CMakeFiles\packageSimplified.dir/objects.a @CMakeFiles\packageSimplified.dir\objects1
+C:\Users\YEWAN\mingw64\bin\x86_64-w64-mingw32-gcc.exe -g -Wl,--whole-archive CMakeFiles\packageSimplified.dir/objects.a -Wl,--no-whole-archive -o packageSimplified.exe -Wl,--out-implib,libpackageSimplified.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\packageSimplified.dir\linkLibs.rsp

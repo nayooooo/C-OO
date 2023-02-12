@@ -1,0 +1,12 @@
+[
+{
+  "directory": "D:/code/C/pointer/OO/packageSimplified/build",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/packageSimplified.dir/includes_C.rsp -g -o CMakeFiles\\packageSimplified.dir\\main.c.obj -c D:\\code\\C\\pointer\\OO\\packageSimplified\\main.c",
+  "file": "D:/code/C/pointer/OO/packageSimplified/main.c"
+},
+{
+  "directory": "D:/code/C/pointer/OO/packageSimplified/build/components/Object",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/Object.dir/includes_C.rsp -g -o CMakeFiles\\Object.dir\\object.c.obj -c D:\\code\\C\\pointer\\OO\\packageSimplified\\components\\Object\\object.c",
+  "file": "D:/code/C/pointer/OO/packageSimplified/components/Object/object.c"
+}
+]

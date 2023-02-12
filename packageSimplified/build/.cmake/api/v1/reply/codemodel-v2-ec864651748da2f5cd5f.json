@@ -1,0 +1,104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "components",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-components-Debug-167515c4e4d9cb6cacf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "components"
+				},
+				{
+					"build" : "components/Object",
+					"jsonFile" : "directory-components.Object-Debug-dbc3a3355a5ba11c2296.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "components/Object",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "packageSimplified",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Object::@73cdb510a62e33b9502e",
+					"jsonFile" : "target-Object-Debug-183a739c165e74c25b58.json",
+					"name" : "Object",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "packageSimplified::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-packageSimplified-Debug-861bc0c136cdf08cba98.json",
+					"name" : "packageSimplified",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/code/C/pointer/OO/packageSimplified/build",
+		"source" : "D:/code/C/pointer/OO/packageSimplified"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
