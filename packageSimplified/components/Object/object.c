@@ -13,15 +13,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* private VISIBILITY -------------------------------------------*/
-
-#define OBJECT_PRIVATE                   Object_Internal*
-
-#define OBJECT_INTRO_VISIBILITY          OBJECT_PRIVATE
-#define OBJECT_AGE_VISIBILITY            OBJECT_PRIVATE
-
-#define OBJECT_IVPTR_VISIBILITY          OBJECT_PRIVATE
-
 /* extern private method ----------------------------------------*/
 
 typedef struct Object_Internal_Method_Table Object_Internal_Method_Table;
@@ -43,14 +34,6 @@ void Object_SetAge(Object *const this, uint8_t age);
 
 /* private struct -----------------------------------------------*/
 
-typedef struct Object_Internal{
-    union{
-        Object public;
-        void *intro;
-    };
-    uint8_t age;
-}Object_Internal;
-
 typedef struct Object_Internal_Method_Table{
     void (*setAge)(Object *const this, uint8_t age);
 }Object_Internal_Method_Table;
@@ -65,33 +48,17 @@ static Object_Internal_Method_Table ivptr = {
 
 /* construction and destructor ----------------------------------*/
 
-Object *new_Object(Object *const this, uint8_t *name, uint8_t age)
+Object *Object_Init(Object *const this, uint8_t *name, uint8_t age)
 {
     /* object */
-    memset(this, 0, sizeof(Object_Internal));
+    memset(this, 0, sizeof(Object));
 
     /* public attribute */
-    ((OBJECT_NAME_VISIBILITY)this)->name = name;
+    this->name = name;
     /* private attribute */
-    ((OBJECT_AGE_VISIBILITY)this)->age = age;
-
-    printf("The object(%s) has been created!\r\n",
-        ((OBJECT_NAME_VISIBILITY)this)->name);
+    this->iobj.age = age;
 
     return (Object*)this;
-}
-
-Object *delete_Object(Object *this)
-{
-    printf("The object(%s) will be freed!\r\n",
-        ((OBJECT_NAME_VISIBILITY)this)->name);
-
-    if((Object_Internal*)this != NULL) {
-        free((void*)((Object_Internal*)this));
-        this = NULL;
-    }
-
-    return this;
 }
 
 /* vptr and ivptr -----------------------------------------------*/
@@ -110,12 +77,12 @@ static const Object_Internal_Method_Table *Object_ivptr(void)
 
 uint8_t Object_GetAge(Object *const this)
 {
-    return ((OBJECT_AGE_VISIBILITY)this)->age;
+    return this->iobj.age;
 }
 
 /* private method -----------------------------------------------*/
 
 void Object_SetAge(Object *const this, uint8_t age)
 {
-    ((OBJECT_AGE_VISIBILITY)this)->age = age;
+    this->iobj.age = age;
 }

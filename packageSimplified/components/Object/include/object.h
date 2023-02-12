@@ -12,19 +12,17 @@
 
 #include <stdint.h>
 
-/* public VISIBILITY --------------------------------------------*/
-
-#define OBJECT_PUBLIC                    Object*
-
-#define OBJECT_NAME_VISIBILITY           OBJECT_PUBLIC
-
-#define OBJECT_VPTR_VISIBILITY           OBJECT_PUBLIC
-#define OBJECT_GET_AGE_VISIBILITY        OBJECT_PUBLIC
-
 /* public struct ------------------------------------------------*/
 
+typedef struct Object_Internal{
+    uint8_t age;
+}Object_Internal;
+
 typedef struct Object{
+    // public
     uint8_t *name;
+    // private
+    Object_Internal iobj;
 }Object;
 
 typedef struct Object_Method_Table{
@@ -33,8 +31,7 @@ typedef struct Object_Method_Table{
 
 /* public method ------------------------------------------------*/
 
-Object *new_Object(Object *const this, uint8_t *name, uint8_t age);
-Object *delete_Object(Object *this);
+Object *Object_Init(Object *const this, uint8_t *name, uint8_t age);
 
 const Object_Method_Table *Object_vptr(void);
 

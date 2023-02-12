@@ -9,13 +9,10 @@
 
 #include "main.h"
 
-#include "Windows.h"
-
 int main(int argc, char *argv[])
 {
-    Object obj = {
-        .name = "apple",
-    };
+    Object obj;
+    Object_Init(&obj, "apple", 3);
 
     printf("The object's name is %s.\r\n", obj.name);
     printf("The object's age is %d.\r\n", Object_vptr()->getAge(&obj));
