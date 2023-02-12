@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.lua": "lua",
+        "stdio.h": "c",
+        "object.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}
