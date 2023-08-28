@@ -16,6 +16,11 @@ protected先不作讨论：
 
 本例程将原来的Class类替换成了Object类。
 
+使用本例程时，请将文件夹名称作如下修改：
+
+	./components/Object->./components/object
+	./components/Person->./components/person
+
 ## 进度 ##
 
 2022.01.27
