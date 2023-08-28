@@ -7,53 +7,64 @@
  *
  */
 
-#ifndef __OBJECT_H
-#define __OBJECT_H
+#ifndef __OBJECT_H__
+#define __OBJECT_H__
 
 #include <stdint.h>
 
-/* public VISIBILITY --------------------------------------------*/
+/*========================================================
+	configuration micro
+========================================================*/
+#ifdef NULL
+#	define OBJ_NULL				NULL
+#else
+#	define OBJ_NULL				((void*)0)
+#endif // NULL
 
-#define OBJECT_PUBLIC                    Object*
+#define OBJ_NAME_LEN			(20)
 
-#define OBJECT_NAME_VISIBILITY           OBJECT_PUBLIC
+#define OBJ_EOK					(0)
+#define OBJ_ERROR				(1)
+#define OBJ_PARAM				(2)
 
-#define OBJECT_VPTR_VISIBILITY           OBJECT_PUBLIC
-#define OBJECT_GET_AGE_VISIBILITY        OBJECT_PUBLIC
+/*========================================================
+	base typedef
+========================================================*/
+typedef unsigned int	obj_base_t;
+typedef obj_base_t		obj_flag_t;
+typedef obj_base_t		obj_size_t;
+typedef obj_flag_t		obj_err_t;
 
-/* public struct ------------------------------------------------*/
+typedef int8_t			obj_int8_t;
+typedef int16_t			obj_int16_t;
+typedef int32_t			obj_int32_t;
+typedef int64_t			obj_int64_t;
+typedef uint8_t			obj_uint8_t;
+typedef uint16_t		obj_uint16_t;
+typedef uint32_t		obj_uint32_t;
+typedef uint64_t		obj_uint64_t;
 
-typedef struct Object_Method_Table Object_Method_Table;
+typedef obj_uint8_t		obj_sflag_t;
 
-typedef struct Object{
-    uint8_t *name;
-    Object_Method_Table *vptr;
-}Object;
+/*========================================================
+	base object
+========================================================*/
+struct object {
+	char name[OBJ_NAME_LEN];
 
-typedef struct Object_Method_Table{
-    uint8_t (*getAge)(Object *const this);
-    uint32_t (*getNum)(Object *const this);
-}Object_Method_Table;
+	obj_flag_t flag;
+};
+typedef struct object* object_t;
 
-/* public method ------------------------------------------------*/
+/*========================================================
+	base function
+========================================================*/
+void* obj_malloc(obj_size_t size);
+void obj_free(void* block);
 
-Object *new_Object(uint8_t *name, uint8_t age);
-Object *delete_Object(Object *this);
+void* obj_memcpy(void* dst, void* src, obj_size_t size);
+int obj_memcmp(const void* buf1, const void* buf2, obj_size_t size);
 
-/**
- * @brief Get the objects' num
- *
- * @param this object's pointer
- * @return uint32_t objects' num
- */
-uint32_t Object_GetNum(Object *const this);
+obj_size_t obj_strlen(const char* str);
 
-/**
- * @brief Get the Age object
- *
- * @param this object's pointer
- * @return uint8_t object's age
- */
-uint8_t Object_GetAge(Object *const this);
-
-#endif /* __OBJECT_H */
+#endif // !__OBJECT_H__

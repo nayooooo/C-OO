@@ -9,44 +9,24 @@
 
 #include "person.h"
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-/* private VISIBILITY -------------------------------------------*/
+const char* _person_name(struct person* p)
+{
+    if (p == OBJ_NULL) return OBJ_NULL;
 
-/* private inheritance struct -----------------------------------*/
+    return p->parent.name;
+}
 
-// #include "includes.h"
+obj_err_t person_init(person_t p, const char* name)
+{
+    if (p == OBJ_NULL) return -OBJ_PARAM;
+    if (name == OBJ_NULL) return -OBJ_PARAM;
 
-// typedef struct Person_BaseClass_Internal_Struct{
-//     Includes *includes;
-// }Person_BaseClass_Internal_Struct;
+    obj_memcpy(p->parent.name, (void*)name, sizeof(p->parent.name));
 
-/* private struct -----------------------------------------------*/
+    p->name = _person_name;
 
-typedef struct Person_Internal_Method_Table Person_Internal_Method_Table;
-
-typedef struct Person_Internal{
-    union{
-        Person public;
-        void *intro;
-    };
-    // Person_BaseClass_Internal_Struct *bc_i_t;
-    uint8_t IQ;             // 智商
-    uint8_t EQ;             // 情商
-    Person_Internal_Method_Table *ivptr;
-}Person_Internal;
-
-typedef struct Person_Internal_Method_Table{
-    uint8_t (*setIQ)(Person *const this, uint8_t IQ);
-}Person_Internal_Method_Table;
-
-/* extern private method ----------------------------------------*/
-
-
-/* construction and destructor ----------------------------------*/
-
-/* public method ------------------------------------------------*/
-
-/* private method -----------------------------------------------*/
+    return OBJ_EOK;
+}

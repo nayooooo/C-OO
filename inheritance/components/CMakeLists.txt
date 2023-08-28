@@ -1,2 +1,2 @@
-add_subdirectory(Object)
-add_subdirectory(Person)
+add_subdirectory(object)
+add_subdirectory(person)

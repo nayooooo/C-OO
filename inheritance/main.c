@@ -9,9 +9,13 @@
 
 #include "main.h"
 
+struct person p;
+
 int main(int argc, char *argv[])
 {
-    printf("Hello Inheritance!\r\n");
+    person_init(&p, "Bob");
+
+    printf("p_name: %s\r\n", p.name(&p));
 
     return 0;
 }

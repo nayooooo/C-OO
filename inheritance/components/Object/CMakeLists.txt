@@ -1,3 +1,3 @@
-add_library(Object STATIC
+add_library(object STATIC
             object.c)
-target_include_directories(Object PUBLIC include)
+target_include_directories(object PUBLIC include)

@@ -1,0 +1,2 @@
+C:\Users\YEWAN\mingw64\bin\ar.exe qc libperson.a CMakeFiles/person.dir/person.c.obj
+C:\Users\YEWAN\mingw64\bin\ranlib.exe libperson.a

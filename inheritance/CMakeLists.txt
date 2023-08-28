@@ -8,10 +8,10 @@ set(SRC_LIST main.c)
 add_executable(${PROJECT_NAME} ${SRC_LIST})
 
 target_link_libraries(${PROJECT_NAME} PUBLIC
-                        Object
-                        Person)
+                        object
+                        person)
 
 target_include_directories(${PROJECT_NAME} PUBLIC
                             ${PROJECT_SOURCE_DIR}
-                            ${PROJECT_SOURCE_DIR}/components/Object
-                            ${PROJECT_SOURCE_DIR}/components/Person)
+                            ${PROJECT_SOURCE_DIR}/components/object
+                            ${PROJECT_SOURCE_DIR}/components/person)

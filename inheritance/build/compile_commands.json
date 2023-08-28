@@ -1,0 +1,17 @@
+[
+{
+  "directory": "D:/code/CProject/C-OO/inheritance/build",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/inheritance.dir/includes_C.rsp -g -o CMakeFiles\\inheritance.dir\\main.c.obj -c D:\\code\\CProject\\C-OO\\inheritance\\main.c",
+  "file": "D:/code/CProject/C-OO/inheritance/main.c"
+},
+{
+  "directory": "D:/code/CProject/C-OO/inheritance/build/components/Object",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/object.dir/includes_C.rsp -g -o CMakeFiles\\object.dir\\object.c.obj -c D:\\code\\CProject\\C-OO\\inheritance\\components\\object\\object.c",
+  "file": "D:/code/CProject/C-OO/inheritance/components/object/object.c"
+},
+{
+  "directory": "D:/code/CProject/C-OO/inheritance/build/components/Person",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/person.dir/includes_C.rsp -g -o CMakeFiles\\person.dir\\person.c.obj -c D:\\code\\CProject\\C-OO\\inheritance\\components\\person\\person.c",
+  "file": "D:/code/CProject/C-OO/inheritance/components/person/person.c"
+}
+]

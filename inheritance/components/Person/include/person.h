@@ -7,37 +7,23 @@
  *
  */
 
-#ifndef __PERSON_H
-#define __PERSON_H
-
-#include <stdint.h>
-
-/* public VISIBILITY --------------------------------------------*/
-
-#define PERSON_PUBLIC                    Person*
-
-/* public inheritance struct ------------------------------------*/
+#ifndef __PERSON_H__
+#define __PERSON_H__
 
 #include "object.h"
 
-typedef struct Person_BaseClass_Struct{
-    Object *object;
-}Person_BaseClass_Struct;
+/*========================================================
+	base object
+========================================================*/
+struct person {
+	struct object parent;
 
-/* public struct ------------------------------------------------*/
+    obj_uint8_t age;
 
-typedef struct Person_Method_Table Person_Method_Table;
+    const char*     (*name)         (struct person* p);
+};
+typedef struct person* person_t;
 
-typedef struct Person{
-    Person_BaseClass_Struct *bc_t;
-    uint8_t *sex;           // 性别
-    Person_Method_Table *vptr;
-}Person;
+obj_err_t person_init(person_t p, const char* name);
 
-typedef struct Person_Method_Table{
-    uint8_t (*getIQ)(Person *const this);
-}Person_Method_Table;
-
-/* public method ------------------------------------------------*/
-
-#endif /* __PERSON_H */
+#endif // !__PERSON_H__
