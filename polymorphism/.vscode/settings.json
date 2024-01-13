@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.lua": "lua",
+        "stdio.h": "c",
+        "object.h": "c",
+        "stdint.h": "c",
+        "typeinfo": "c"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}

@@ -1,0 +1,1 @@
+-I"D:/code/CProject/C-OO/polymorphism/include" -I"D:/code/CProject/C-OO/polymorphism/components/person/include" -I"D:/code/CProject/C-OO/polymorphism/components/person" -I"D:/code/CProject/C-OO/polymorphism/components/person/components/object" -I"D:/code/CProject/C-OO/polymorphism/components/object/include"

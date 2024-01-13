@@ -1,0 +1,22 @@
+[
+{
+  "directory": "D:/code/CProject/C-OO/polymorphism/build",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/polymorphism.dir/includes_C.rsp -g -o CMakeFiles\\polymorphism.dir\\main.c.obj -c D:\\code\\CProject\\C-OO\\polymorphism\\main.c",
+  "file": "D:/code/CProject/C-OO/polymorphism/main.c"
+},
+{
+  "directory": "D:/code/CProject/C-OO/polymorphism/build/components/object",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/object.dir/includes_C.rsp -g -o CMakeFiles\\object.dir\\object.c.obj -c D:\\code\\CProject\\C-OO\\polymorphism\\components\\object\\object.c",
+  "file": "D:/code/CProject/C-OO/polymorphism/components/object/object.c"
+},
+{
+  "directory": "D:/code/CProject/C-OO/polymorphism/build/components/person",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/person.dir/includes_C.rsp -g -o CMakeFiles\\person.dir\\person.c.obj -c D:\\code\\CProject\\C-OO\\polymorphism\\components\\person\\person.c",
+  "file": "D:/code/CProject/C-OO/polymorphism/components/person/person.c"
+},
+{
+  "directory": "D:/code/CProject/C-OO/polymorphism/build/components/man",
+  "command": "C:\\Users\\YEWAN\\mingw64\\bin\\x86_64-w64-mingw32-gcc.exe  @CMakeFiles/man.dir/includes_C.rsp -g -o CMakeFiles\\man.dir\\man.c.obj -c D:\\code\\CProject\\C-OO\\polymorphism\\components\\man\\man.c",
+  "file": "D:/code/CProject/C-OO/polymorphism/components/man/man.c"
+}
+]

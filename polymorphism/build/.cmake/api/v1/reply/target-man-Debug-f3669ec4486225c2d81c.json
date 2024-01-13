@@ -1,0 +1,158 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "components/man/libman.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"components/man/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 4,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "D:/code/CProject/C-OO/polymorphism/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/man/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/man"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/man/components/object"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/man/components/person"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/object/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/person/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/person"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/code/CProject/C-OO/polymorphism/components/person/components/object"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "object::@8db046347a1f49bbcdc1"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "person::@c9d40e3b9c293475d795"
+		}
+	],
+	"id" : "man::@3d0c8ebb93cd95fb9350",
+	"name" : "man",
+	"nameOnDisk" : "libman.a",
+	"paths" : 
+	{
+		"build" : "components/man",
+		"source" : "components/man"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "components/man/man.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

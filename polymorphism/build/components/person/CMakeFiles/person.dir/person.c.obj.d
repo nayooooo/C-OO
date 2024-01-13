@@ -1,0 +1,32 @@
+components/person/CMakeFiles/person.dir/person.c.obj: \
+ D:\code\CProject\C-OO\polymorphism\components\person\person.c \
+ D:/code/CProject/C-OO/polymorphism/components/person/include/person.h \
+ D:/code/CProject/C-OO/polymorphism/components/object/include/object.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/Users/YEWAN/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Users/YEWAN/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h
